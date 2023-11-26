@@ -1,0 +1,223 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+}
+
+.title-style {
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 3.5em;
+    line-height: 1.2;
+    margin-bottom: 0.2em;
+}
+
+.discription-style {
+    width: 32em;
+    font-size: 18px;
+    color: aliceblue;
+    line-height: 1.7;
+    word-spacing: 2;
+}
+
+.card_container {
+    height: 45rem;
+    width: 80rem;
+    display: flex;
+}
+
+.title_container {
+    height: inherit;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.register_container {
+    height: inherit;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.deal_container {
+    background-color: hsl(248, 32%, 49%);
+    width: 35em;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+    border-radius: 0.7em;
+}
+
+small {
+    font-weight: 400;
+}
+
+.deal_font_style {
+    color: white;
+    font-size: 16px;
+    word-spacing: 0.1em;
+}
+
+.info_form {
+    background-color: white;
+    width: 35em;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7em;
+}
+
+.form_style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input_form {
+    height: 3em;
+    width: 27em;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(95, 87, 76);
+    padding-left: 2em;
+    border-radius: 0.5em;
+    border-color: hsl(246, 25%, 77%);
+}
+
+.error {
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-size: 1.3em;
+    background-position: 26em;
+    border-color: hsl(0, 100%, 74%);
+}
+
+.warning {
+    font-size: 12px;
+    color: hsl(0, 100%, 74%);
+    margin-bottom: 1em;
+    margin-left: 20em;
+}
+
+.button_form {
+    height: 3.4em;
+    width: 27.5em;
+    border-radius: 0.5em;
+    font-size: 17px;
+    font-weight: 600;
+    word-spacing: 0.05em;
+    color: aliceblue;
+    background-color: hsl(154, 59%, 51%);
+    border: 0;
+}
+
+.button_form:hover {
+    background-color: hsla(120, 59%, 51%, 60%);
+}
+
+.last_discrip {
+    font-size: 11px;
+    font-weight: 400;
+    color: hsl(246, 25%, 77%);
+}
+
+strong {
+    color: hsl(0, 100%, 74%) ;
+}
+
+@media (max-width: 900px)  {
+    body {
+        background-image: url(./images/bg-intro-mobile.png);
+    }
+
+    .card_container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title_container {
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 4em 0 4em 0;
+    }
+
+    .title-style {
+        width: 9em;
+        font-size: 2em;
+    }
+
+    .discription-style {
+        width: 20em;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .deal_container {
+        background-color: hsl(248, 32%, 49%);
+        width: 24em;
+        height: 8em;
+    }
+
+    .deal_font_style {
+        color: white;
+        font-size: 19px;
+        word-spacing: 0.1em;
+        text-align: center;
+        padding: 0 3em 0 3em;
+    }
+
+    .info_form {
+        width: 24em;
+        height: 35em;
+        margin-bottom: 4em;
+    }
+
+    .input_form {
+        height: 3.5em;
+        width: 19em;
+        padding-left: 1em;  
+    }
+
+    .button_form {
+        height: 4em;
+        width: 19.5em;
+        font-size: 17px;
+    }
+
+    .last_discrip {
+        width: 22em;
+        text-align: center;
+        font-size: 13px;
+    }
+
+
+    .error {
+        background-position: 18em;
+    }
+
+    .warning {
+        margin-left: 10em;
+    }
+    
+}
